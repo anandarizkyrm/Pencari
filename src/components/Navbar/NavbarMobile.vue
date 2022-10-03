@@ -1,5 +1,5 @@
 <template>
-  <nav class="navbar-container"></nav>
+  <nav class="navbar-container">Hell no</nav>
 </template>
 
 <script></script>

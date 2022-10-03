@@ -3,10 +3,7 @@
     <div class="navbar-content-container">
       <div class="navbar-content">
         <ul>
-          <li>Github</li>
-          <li>Linkedin</li>
-          <li>Icon</li>
-          <li>Pictures</li>
+          <li v-for="menu in menus" :key="menu.name">{{ menu.name }}</li>
         </ul>
       </div>
     </div>
@@ -16,15 +13,19 @@
 <script>
 export default {
   name: "NavbarDesktop",
-  props: "listMenus",
-  mounted() {},
-  methods: {},
+  // eslint-disable-next-line vue/require-prop-types
+  props: {
+    menus: Array,
+  },
 };
 </script>
 
 <style>
 .navbar-container {
   display: block;
+  width: 100%;
+  background: #000;
+  background: rgb(146, 146, 146);
 }
 
 .navbar-content-container {
